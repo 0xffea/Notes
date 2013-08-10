@@ -11,3 +11,16 @@ Install the zone:
 ```shell
 zoneadm -z lx-zone install -d centos_fs.tar.bzip2
 ```
+
+Enable debug output:
+```shell
+echo "lx_debug/W 1" | mdb -kw
+```
+
+Halt zone:
+```shell
+zoneadm -z lx-zone halt
+```
+
+[] klogd runs wild in syslog
+[] proc not mounted (top, ps not working)
