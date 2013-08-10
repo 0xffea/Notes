@@ -17,10 +17,15 @@ Enable debug output:
 echo "lx_debug/W 1" | mdb -kw
 ```
 
+List dtrace probes:
+```shell
+dtrace -P lxsyscall -l
+```
+
 Halt zone:
 ```shell
 zoneadm -z lx-zone halt
 ```
 
-[] klogd runs wild in syslog
-[] proc not mounted (top, ps not working)
+- [] klogd runs wild in syslog
+- [] proc not mounted (top, ps not working)
